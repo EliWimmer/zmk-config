@@ -20,25 +20,25 @@
             tapping-term-ms = <220>;
             quick-tap-ms = <200>;
             require-prior-idle-ms = <150>;
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp &kp>;
         };
 
         hyesc: hyper_esc {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
-            bindings = <&kp LS(LC(LA(LGUI)))>, <&kp ESC>;
+            bindings = <&kp LS(LC(LA(LGUI))) &kp ESC>;
         };
 
         ment: meh_enter {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
-            bindings = <&kp LS(LC(LALT))>, <&kp ENTER>;
+            bindings = <&kp LS(LC(LALT)) &kp ENTER>;
         };
 
         ltp: layer_tap_repeat {
@@ -47,7 +47,7 @@
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
-            bindings = <&mo>, <&kp>;
+            bindings = <&mo &kp>;
         };
     };
 
